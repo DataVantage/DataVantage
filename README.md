@@ -14,6 +14,7 @@ every recommendation carries a number and an owner.
 | Project | What it answers | Stack |
 | --- | --- | --- |
 | [**operational-analytics-kpi-steering**](https://github.com/DataVantage/operational-analytics-kpi-steering) | *"Net revenue is down — why, how much is fixable, and who does what by Monday?"* Raw transactions to a governed KPI mart, driver decomposition and a written decision memo. One command, and the build fails if the numbers don't tie out. | Python · SQL (DuckDB/SQLite) · LMDI-I · CI |
+| [**customer-service-case-management**](https://github.com/DataVantage/customer-service-case-management) | *"So what do we build, and how will we know it worked?"* A full BA case on a real help-desk event log: as-is/to-be, requirements, user stories, test cases and a traceability matrix that fails the build if a single link is missing. | Python · BPMN 2.0 · Requirements Engineering · CI |
 | [**business-operations-kpi-governance-case**](https://github.com/DataVantage/business-operations-kpi-governance-case) | The same business question answered in the BI tool a company actually owns: dashboard, KPI logic in DAX, and every headline metric re-derived in SQL as a cross-check. | Power BI · DAX · Power Query · SQL |
 | [**problem-radar**](https://github.com/DataVantage/problem-radar) | *"Which concrete, budgeted business problem is worth starting with?"* Collects public signals, deduplicates, clusters and scores them — every score explainable down to the sentence that produced it. | Python (standard library only) · TF-IDF · SQLite |
 
@@ -41,9 +42,9 @@ Power Query · Excel · Python (pandas, numpy) · R
 **Engineering** — dimensional modelling (Kimball) · ETL pipelines ·
 data quality frameworks · testing & CI · CLI tooling
 
-**Business** — KPI definition & governance · process analysis ·
-requirements engineering · Jira / Confluence · decision memos for
-non-technical stakeholders
+**Business** — KPI definition & governance · process analysis (BPMN) ·
+requirements engineering · user stories & traceability · test strategy ·
+Jira / Confluence · decision memos for non-technical stakeholders
 
 ---
 
